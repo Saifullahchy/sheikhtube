@@ -1,12 +1,34 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import "./App.css";
-import Navbar from "./components/navbar";
-import {BrowserRouter as Router} from 'react-router-dom'
+import NavBar from "./components/navbar/Navbar";
+import About from './pages/AboutUs/About';
+import Contact from './pages/Contact/Contact';
+import Home from './pages/Home/Home';
+import News from './pages/News/News';
+import Order from './pages/Order/Order';
+import PipeOrder from './pages/Order/PipeOrder/PipeOrder';
+import Scrap from './pages/Order/Scrap/Scrap';
+import Products from './pages/Products/Products';
 
 function App() {
   return (
+    <div className='App'>
+     
     <Router>
-      <Navbar/>
+    <NavBar/>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/products' element={<Products/>}/>
+      <Route path='/order' element={<Order/>}/>
+      <Route path='/pipe-order-form' element={<PipeOrder/>}/>
+      <Route path='/scrap-order' element={<Scrap/>}/>
+      <Route path='/news' element={<News/>}/>
+      <Route path='/about-us' element={<About/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+          </Routes>
+     
     </Router>
+    </div>
   );
 }
 
