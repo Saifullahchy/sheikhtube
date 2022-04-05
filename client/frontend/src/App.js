@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import "./App.css";
+import Footer from './components/Footer/Footer';
 import NavBar from "./components/navbar/Navbar";
 import About from './pages/AboutUs/About';
 import Contact from './pages/Contact/Contact';
@@ -25,7 +26,8 @@ function App() {
       <Route path='/news' element={<News/>}/>
       <Route path='/about-us' element={<About/>}/>
       <Route path='/contact' element={<Contact/>}/>
-          </Routes>
+    </Routes>
+    <Footer/>
      
     </Router>
     </div>
