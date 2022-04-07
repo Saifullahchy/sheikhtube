@@ -1,0 +1,141 @@
+ .footer-info-section{
+    display: flex;
+	justify-content: center;
+}
+.clearfix{
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+
+.footer-info-section{
+	position:relative;
+	margin-top:-5px;
+	padding: 10px;
+	background-color:#1c1c1c;
+	border-top:1px solid rgba(255,255,255,0.10);
+	border-left:1px solid rgba(255,255,255,0.10);
+	border-right:1px solid rgba(255,255,255,0.10);
+}
+
+ .footer-info-section .info-block{
+	position:relative;
+	margin-bottom:0px;
+	width: 100%;
+}
+
+.footer-info-section .info-block:after{
+	position:absolute;
+	content:'';
+	top:18px;
+	width:1px;
+	height:50px;
+	background-color:rgba(255,255,255,0.10);
+}
+
+ .footer-info-section .info-block:last-child:after{
+	display:none;
+}
+
+ .footer-info-section .info-block .inner{
+	position:relative;
+	padding-left:40px;
+	margin-left:30px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+ .footer-info-section .info-block .inner .icon{
+	position:absolute;
+	left:0px;
+	top:24px;
+	color:#13b5ea;
+	font-size:28px;
+	line-height:1em;
+}
+
+ .footer-info-section .info-block .inner h6{
+	position:relative;
+	color:#ffffff;
+	font-weight:600;
+	margin-bottom:5px;
+	line-height:1em;
+}
+
+ .footer-info-section .info-block .inner .text{
+	position:relative;
+	color:#ffffff;
+	font-size:16px;
+}
+
+ .footer-bottom{
+	position:relative;
+	/* padding:26px 0px; */
+	border-top:1px solid rgba(255,255,255,0.10);
+}
+
+ .footer-bottom .column{
+	position:relative;
+}
+
+ .footer-bottom .copyright{
+	position:relative;
+	color:#ffffff;
+	font-size:14px;
+}
+
+ .footer-bottom .nav-column{
+	position:relative;
+	text-align:right;
+}
+
+ .footer-bottom .nav-column .footer-nav{
+	position:relative;
+}
+
+ .footer-bottom .nav-column .footer-nav li{
+	position:relative;
+	margin-left:20px;
+	display:inline-block;
+}
+
+ .footer-bottom .nav-column .footer-nav li a{
+	position:relative;
+	color:#ffffff;
+	font-size:16px;
+	font-weight:300;
+	transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+}
+
+ .footer-bottom .nav-column .footer-nav li a:hover{
+	color:#13b5ea;
+}
+.fas{
+    color: #ffffff;
+    font-size: 30px;
+}
+.inner{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.inner-item{
+    margin-left: 30px;
+}
+@media screen and (max-width: 960px) {
+    .clearfix{
+        flex-direction: column;
+    }
+	.footer-info-section .info-block .inner{
+		
+		padding-left:0px;
+		margin-left:0px;
+	}
+}

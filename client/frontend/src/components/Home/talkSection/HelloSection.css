@@ -1,0 +1,91 @@
+.hello-wrapper{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    
+}
+.map-section{
+    width: 100%;
+}
+.hello-row{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+.hello-form-section{
+    background: rgba(0, 0, 0, 0.993);
+    width: 100%;
+   
+    
+}
+.hello-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hello-qoute{
+    color: #fff;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 50px;
+    
+}
+
+.dash{
+    width: 40px;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+.hello-text{
+    color: #fff;
+    padding: 19px;
+    margin-bottom: 40px;
+}
+.hello-form-item{
+    display: flex;
+    
+   
+    
+}
+.form-group{
+    width: 100%;
+    padding: 5px;
+    
+}
+.hello-input{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid rgb(48, 53, 56);
+    border-radius: 5px;
+    padding: 15px;
+}
+.hello-btn{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 184, 240);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.hello-btn:hover{
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: rgb(0, 170, 255);
+}
+@media screen and (max-width:960px) {
+   .hello-wrapper{
+       flex-direction: column;
+   }
+   .hello-form-item{
+       flex-direction: column;
+   }
+   .hello-btn{
+       height: 60px;
+   }
+}
