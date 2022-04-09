@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import "./App.css";
 import Footer from './components/Footer/Footer';
 import NavBar from "./components/navbar/Navbar";
+import Dashboard from './Dashboard/Dashboard';
 import About from './pages/AboutUs/About';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
@@ -12,12 +13,14 @@ import Scrap from './pages/Order/Scrap/Scrap';
 import Products from './pages/Products/Products';
 
 function App() {
-  return (
-    <div className='App'>
-     
-    <Router>
-    <NavBar/>
-    <Routes>
+ const Admin = false;
+
+  const CheckAdmin = () => {
+    return  Admin ?   <Routes>
+    <Route path='/dashboard' element={<Dashboard/>}/>
+  </Routes> : <>
+      <NavBar/>
+      <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/products' element={<Products/>}/>
       <Route path='/order' element={<Order/>}/>
@@ -26,9 +29,15 @@ function App() {
       <Route path='/news' element={<News/>}/>
       <Route path='/about-us' element={<About/>}/>
       <Route path='/contact' element={<Contact/>}/>
-    </Routes>
-    <Footer/>
-     
+      </Routes>
+    <Footer/></>;
+  }
+ 
+  return (
+    <div className='App'>
+
+    <Router>
+    <CheckAdmin/>
     </Router>
     </div>
   );

@@ -77,7 +77,7 @@ const NavBar = () => {
                     </li>
 
                 </ul>
-                <Link to='/sign-in' className='sign-in-btn'>
+                <Link to='/dashboard' className='sign-in-btn'>
                     <Button />
                 </Link>
             </nav>
